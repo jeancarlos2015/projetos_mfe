@@ -1,0 +1,7 @@
+node_modules
+packages/app1/node_modules
+packages/app2/node_modules
+packages/footer/node_modules
+packages/home/node_modules
+packages/navbar/node_modules
+packages/root/node_modules
