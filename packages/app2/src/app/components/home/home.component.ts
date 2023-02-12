@@ -15,7 +15,9 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
-
+  redirecionar(){
+    this.router.navigateByUrl("/app3");
+  }
 
 
 

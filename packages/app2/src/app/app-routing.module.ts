@@ -8,18 +8,17 @@ const routes: Routes = [
 
   {
     path:"app2",
-    component: HomeComponent,
-    children:[
-      {
-        path:"apresentacao",
-        component: PaginaApresentacaoComponent
-      }
-    ]
+    component: HomeComponent
+  },
+
+  {
+    path:"app2/apresentacao",
+    component: PaginaApresentacaoComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
