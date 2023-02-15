@@ -4,22 +4,23 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
-import {MegaMenuModule} from 'primeng/megamenu';
-import {MenubarModule} from 'primeng/menubar';
+import { APP_BASE_HREF } from '@angular/common';
+import {TabMenuModule} from 'primeng/tabmenu';
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    AccordionModule,
-    MegaMenuModule,
-    MenubarModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent
+    ],
+    providers: [
+        {
+            provide: APP_BASE_HREF, useValue: "/"
+        }
+    ],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        TabMenuModule
+    ]
 })
 export class AppModule { }
